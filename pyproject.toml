@@ -40,26 +40,26 @@ version_toml = ["pyproject.toml:tool.poetry.version"]
 branch = "master"
 repository = "testpypi"
 build_command = "pip install poetry && poetry build"
-major_on_zero = true
-allow_zero_version = true
+# major_on_zero = true
+# allow_zero_version = true
 upload_to_pypi = true
 upload_to_release = true
 
-[tool.semantic_release.commit_parser_options]
-allowed_tags = [
-    "build",
-    "chore",
-    "ci",
-    "docs",
-    "feat",
-    "fix",
-    "perf",
-    "style",
-    "refactor",
-    "test",
-]
-minor_tags = ["feat"]
-patch_tags = ["fix", "perf"]
+# [tool.semantic_release.commit_parser_options]
+# allowed_tags = [
+#     "build",
+#     "chore",
+#     "ci",
+#     "docs",
+#     "feat",
+#     "fix",
+#     "perf",
+#     "style",
+#     "refactor",
+#     "test",
+# ]
+# minor_tags = ["feat"]
+# patch_tags = ["fix", "perf"]
 
 [build-system]
 requires = ["poetry-core"]
