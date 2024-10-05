@@ -116,7 +116,7 @@ def compress_video(
             pattern = Constants.FFMPEG_FILE_ALREADY_EXISTS_ERROR_PATTERN
             match = re.search(pattern, line, re.IGNORECASE)
             if match:
-                progress_bar.update(task, completed=100)
+                progress_bar.update(task, completed=99)
 
         try:
             ffmpeg.execute()
