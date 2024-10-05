@@ -3,7 +3,7 @@ name: Semantic Release
 on:
   push:
     branches:
-      - feature/semantic-release
+      - master
 
 jobs:
   release:
@@ -34,7 +34,7 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "action@github.com"
 
-          poetry run semantic-release publish -D commit_author="github-actions <action@github.com>"
+          poetry run semantic-release publish
         env:
           GH_TOKEN: ${{secrets.VIDPACK_GITHUB_TOKEN}}
           PYPI_TOKEN: ${{secrets.TEST_PYPI_TOKEN}}

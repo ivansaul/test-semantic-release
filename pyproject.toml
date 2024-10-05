@@ -35,9 +35,9 @@ python-semantic-release = "^9.9.0"
 
 [tool.semantic_release]
 version_source = "tag"
-version_variable = "src/vidacktest/__init__.py:__version__"
-version_toml = "pyproject.toml:tool.poetry.version"
-branch = "feature/semantic-release"
+version_variable = ["src/vidpacktest/__init__.py:__version__"]
+version_toml = ["pyproject.toml:tool.poetry.version"]
+branch = "master"
 repository = "testpypi"
 build_command = "pip install poetry && poetry build"
 major_on_zero = true
