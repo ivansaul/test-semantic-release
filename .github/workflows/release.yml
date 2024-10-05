@@ -34,7 +34,7 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "action@github.com"
 
-          poetry run semantic-release publish
+          poetry run semantic-release publish -v DEBUG
         env:
-          GH_TOKEN: ${{secrets.VIDPACK_GITHUB_TOKEN}}
-          PYPI_TOKEN: ${{secrets.TEST_PYPI_TOKEN}}
+          GH_TOKEN: ${{ secrets.VIDPACK_GITHUB_TOKEN }}
+          PYPI_TOKEN: ${{ secrets.TEST_PYPI_TOKEN }}
