@@ -112,6 +112,7 @@ def compress_video(
         def on_stderr(line):
             # This pattern checks for errors like "File 'input_compressed.mp4' already exists.".
             # Such errors may occur on Linux, even when using the "-n" flag with ffmpeg.
+            # In this case, we can safely ignore the error and continue the process.
             pattern = Constants.FFMPEG_FILE_ALREADY_EXISTS_ERROR_PATTERN
             match = re.search(pattern, line, re.IGNORECASE)
             if match:
