@@ -1,5 +1,27 @@
 # CHANGELOG
 
+## v0.1.10 (2024-10-06)
+
+### Fix
+
+* fix: Use semantic-release for automated releases
+
+This commit refactors the release workflow to utilize semantic-release for automated versioning and publishing.
+
+The previous workflow manually configured release steps, which was error-prone and lacked consistency.
+
+Semantic-release automatically determines the next version based on commit messages and publishes the package to the appropriate repository (PyPI or Test PyPI).
+
+This improves the release process by reducing manual effort, increasing reliability, and ensuring consistent versioning. ([`3941aed`](https://github.com/ivansaul/test-semantic-release/commit/3941aed73bb5f7ce1c8ef38cf593ef298916f5ff))
+
+### Test
+
+* test: Implement Continuous Delivery pipeline
+
+Update the release workflow to support automated semantic versioning release and publishing to TestPyPI.
+
+The workflow now uses `python-semantic-release` to determine release versions based on commit messages and automatically releases the package to TestPyPI. This streamlines the release process, ensuring consistent and automated releases. ([`da160ce`](https://github.com/ivansaul/test-semantic-release/commit/da160ce5b4dd15c9dd379cba5e8bba8e4cde2332))
+
 ## v0.1.9 (2024-10-06)
 
 ### Fix
