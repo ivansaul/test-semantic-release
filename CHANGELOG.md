@@ -4,6 +4,8 @@
 
 ### Fix
 
+* fix: some fix ([`ace2ee5`](https://github.com/ivansaul/test-semantic-release/commit/ace2ee547fabbb2a4551b5ee835e8912f0439553))
+
 * fix: Publish to TestPyPI
 
 The release workflow is now configured to publish packages to TestPyPI before releasing to official PyPI. This allows testing the release candidate on a separate repository, ensuring stability and avoiding potential issues during the official release. ([`056cd1a`](https://github.com/ivansaul/test-semantic-release/commit/056cd1ac2e138f38d2b79a5c25da50d6012c5ddb))
