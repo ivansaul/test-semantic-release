@@ -20,7 +20,7 @@ def _rethrow_ffmpeg_error(error: FFmpegError) -> None:
     pattern = Constants.FFMPEG_FILE_ALREADY_EXISTS_ERROR_PATTERN
     match = re.search(pattern, error.message, re.IGNORECASE)
 
-    if not not match:
+    if not match:
         raise error
 
 
