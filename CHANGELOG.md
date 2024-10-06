@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.1.3 (2024-10-06)
+
+### Fix
+
+* fix: dakskla ñaksdkñ ([`b77b68f`](https://github.com/ivansaul/test-semantic-release/commit/b77b68f0b9187ccb27d7dd11922f4968c950e347))
+
 ## v0.1.2 (2024-10-05)
 
 ### Fix
