@@ -1,9 +1,9 @@
-name: Semantic Release
+name: SR TEST PYPI
 
 on:
   push:
     branches:
-      - master
+      - develop
 
 jobs:
   release:
@@ -33,8 +33,12 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "action@github.com"
-          poetry run semantic-release publish -D commit_author="github-actions <action@github.com>"
+          poetry config repositories.testpypi https://test.pypi.org/legacy/
+          poetry config pypi-token.testpypi ${{ secrets.TEST_PYPI_TOKEN }}
+          poetry run semantic-release version
+          poetry build
+          poetry publish -r testpypi
 
         env:
           GH_TOKEN: ${{ secrets.VIDPACK_GITHUB_TOKEN }}
-          PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+          PYPI_TOKEN: ${{ secrets.TEST_PYPI_TOKEN }}
