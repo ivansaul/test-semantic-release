@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v0.1.12 (2024-10-06)
+
+### Fix
+
+* fix: Publish to PyPI instead of TestPyPI
+
+This commit removes TestPyPI usage and publishes directly to PyPI.
+
+This change aligns the release process with the intended distribution method. ([`e9815fd`](https://github.com/ivansaul/test-semantic-release/commit/e9815fda8484e7ddc6e142b7722f6b5288a236cb))
+
 ## v0.1.11 (2024-10-06)
 
 ### Fix
