@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v0.1.8 (2024-10-06)
+
+### Fix
+
+* fix: dkaslkal dlakdmal ([`d948ac4`](https://github.com/ivansaul/test-semantic-release/commit/d948ac4105116957c531ef6dd8f98ac754808a7d))
+
+* fix: Move `semantic-release` version bump after `poetry publish`
+
+Ensures that the version bump is performed after the package is published to the test PyPI repository. This prevents potential conflicts with the version number used in the published package. ([`5ee0b4f`](https://github.com/ivansaul/test-semantic-release/commit/5ee0b4f6b1e34af5a4376b583e46c8477c8ee046))
+
 ## v0.1.7 (2024-10-06)
 
 ### Fix
