@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.1.13 (2024-10-06)
+
+### Fix
+
+* fix: kakslaks ([`d26b34c`](https://github.com/ivansaul/test-semantic-release/commit/d26b34c4e85a1c11e2ff5203ca20bc98cc4da50c))
+
 ## v0.1.12 (2024-10-06)
 
 ### Fix
