@@ -33,7 +33,7 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "action@github.com"
-
+          poetry build
           poetry publish -r testpypi
           poetry run semantic-release version
         env:
