@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v0.1.9 (2024-10-06)
+
+### Fix
+
+* fix: lsñdlañls ñalsñla ([`624ccaf`](https://github.com/ivansaul/test-semantic-release/commit/624ccafbf8c50e4b4465adef27cb7bdc3bf49645))
+
+* fix: fdsdf sdfs dfsdf ([`1861f92`](https://github.com/ivansaul/test-semantic-release/commit/1861f92da159f0e5128adeac9c0a7a8914a8cb85))
+
+* fix: Publish releases to TestPyPI
+
+Adds a step to the release workflow to publish releases to TestPyPI after versioning. This allows for testing releases in a dedicated environment before pushing to the main PyPI repository. ([`96b7fc2`](https://github.com/ivansaul/test-semantic-release/commit/96b7fc2f1ef653f7cb03b851a8e4359ff45da705))
+
 ## v0.1.8 (2024-10-06)
 
 ### Fix
