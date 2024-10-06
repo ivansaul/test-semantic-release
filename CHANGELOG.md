@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v0.1.4 (2024-10-06)
+
+### Fix
+
+* fix: Incorrectly negated conditional in `_rethrow_ffmpeg_error`
+
+The conditional statement in `_rethrow_ffmpeg_error` was negated incorrectly, leading to potential issues with handling FFmpeg errors. This commit fixes the negation, ensuring the correct behavior when encountering file-already-exists errors. ([`1f80373`](https://github.com/ivansaul/test-semantic-release/commit/1f8037360e836af3234fbf03c0a1071673ec2e2b))
+
 ## v0.1.3 (2024-10-06)
 
 ### Fix
