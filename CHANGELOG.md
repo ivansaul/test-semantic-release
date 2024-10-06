@@ -1,5 +1,42 @@
 # CHANGELOG
 
+## v0.1.11 (2024-10-06)
+
+### Fix
+
+* fix: Remove unused package definition
+
+Removed redundant package declaration from pyproject.toml and updated version to 0.1.10. ([`1d7db83`](https://github.com/ivansaul/test-semantic-release/commit/1d7db838fdfbc0bf107a3c0c643dc24d9b4c8f01))
+
+* fix: Add support for `develop` branch
+
+Extends semantic release configuration to include the `develop` branch for automated releases, in addition to the existing `master` branch. This allows for smoother workflows and consistent versioning across both branches. ([`93d7cb1`](https://github.com/ivansaul/test-semantic-release/commit/93d7cb14ed4268b343b419f14963c9e1c7fece31))
+
+* fix: Configure semantic release to use master branch
+
+Switch semantic release configuration to use the `master` branch for release management. This ensures that releases are triggered correctly based on the chosen branch. ([`d7f9c9a`](https://github.com/ivansaul/test-semantic-release/commit/d7f9c9add2c05b6df6909bbe26b72fe378fe5cb2))
+
+* fix: support releasing from both master and develop branches
+
+The `branch` setting has been replaced with `branches` to allow releases from both `master` and `develop` branches. This enables more flexibility in the release process. ([`8b40484`](https://github.com/ivansaul/test-semantic-release/commit/8b4048439e7c1ca1f3546b07d8fff5b13551bd22))
+
+* fix: Update semantic release configuration
+
+- Switch the branch for semantic release from `master` to `develop`.
+- Allow for version `0.0.0` and enable major version bump for it.
+
+This aligns the release process with the updated development workflow. It also enables the release of initial versions at `0.0.0` for easier testing and early deployment. ([`fed14b3`](https://github.com/ivansaul/test-semantic-release/commit/fed14b3cc4a4cbb6122f85feecd510a24913f851))
+
+* fix: Rename CI workflow and separate testpypi workflow
+
+Removed the dedicated workflow for publishing to TestPyPI and integrated it into the main CI workflow. This simplifies the workflow configuration and ensures all necessary steps are run in a single flow. ([`1410082`](https://github.com/ivansaul/test-semantic-release/commit/1410082d51de4db4a125e1849e421b5a75361748))
+
+### Unknown
+
+* Merge pull request #2 from ivansaul/develop
+
+Add CD ([`93122de`](https://github.com/ivansaul/test-semantic-release/commit/93122deaec28292165cc152161f701d7c0afccee))
+
 ## v0.1.10 (2024-10-06)
 
 ### Fix
