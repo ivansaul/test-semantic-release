@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.1.14 (2024-10-06)
+
+### Fix
+
+* fix: dasñldañls ([`4f848c0`](https://github.com/ivansaul/test-semantic-release/commit/4f848c004679d94b2efae70d4d6bf5f1a02817b8))
+
 ## v0.1.13 (2024-10-06)
 
 ### Fix
