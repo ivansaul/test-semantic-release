@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.1.2 (2024-10-05)
+
+### Fix
+
+* fix: dalsldalsañls lañls ([`09a1b75`](https://github.com/ivansaul/test-semantic-release/commit/09a1b7563ff5fc376f26627005704b79f3edfbe9))
+
 ## v0.1.1 (2024-10-05)
 
 ### Fix
