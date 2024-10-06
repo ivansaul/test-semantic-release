@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## v0.1.6 (2024-10-06)
+
+### Fix
+
+* fix: Move semantic-release version command to the right place
+
+The `semantic-release version` command was previously executed after publishing to test PyPI.  This has been moved before publishing to ensure the version is updated correctly.  The build command has also been removed as it is now handled by semantic-release. ([`8a273a8`](https://github.com/ivansaul/test-semantic-release/commit/8a273a89610bc62184405695aaad0318fdd9baeb))
+
+* fix: Publish to TestPyPI for releases
+
+Enable publishing to TestPyPI during release workflows for easier testing of new versions. ([`02040e8`](https://github.com/ivansaul/test-semantic-release/commit/02040e8c60939b45e0ca527b99a8c7b07f055b2a))
+
+* fix: Publish to Test PyPI during release
+
+Add a step to the release workflow to publish the package to Test PyPI, allowing for easier testing and feedback on new releases. This provides an intermediate stage before a full production release. ([`6f3e830`](https://github.com/ivansaul/test-semantic-release/commit/6f3e830ca8619fbe1311a648ea0692791ae5e40b))
+
+* fix: Publish to testpypi before releasing
+
+The release workflow now publishes to testpypi before releasing to pypi. This ensures that the package is properly tested and validated before being released to the wider public. ([`5ff9a29`](https://github.com/ivansaul/test-semantic-release/commit/5ff9a29bd9ebad5e3b34edd62c0526174a9eff7b))
+
 ## v0.1.5 (2024-10-06)
 
 ### Fix
