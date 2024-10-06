@@ -33,10 +33,10 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "action@github.com"
-          poetry config repositories.testpypi https://test.pypi.org/legacy/
-          poetry build
-          poetry publish -r testpypi
           poetry run semantic-release version
+          poetry config repositories.testpypi https://test.pypi.org/legacy/
+          poetry config pypi-token.testpypi ${{ secrets.TEST_PYPI_TOKEN }}
+          poetry publish -r testpypi
         env:
           GH_TOKEN: ${{ secrets.VIDPACK_GITHUB_TOKEN }}
           PYPI_TOKEN: ${{ secrets.TEST_PYPI_TOKEN }}
