@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v0.1.5 (2024-10-06)
+
+### Fix
+
+* fix: Publish to Test PyPI on release
+
+This commit modifies the release workflow to publish to Test PyPI during releases. This change allows testing the published package before releasing to production, ensuring a smoother release process and reduced risk of unexpected issues. ([`8419a02`](https://github.com/ivansaul/test-semantic-release/commit/8419a027674b433d1c7592d1deadb711f8d34897))
+
 ## v0.1.4 (2024-10-06)
 
 ### Fix
